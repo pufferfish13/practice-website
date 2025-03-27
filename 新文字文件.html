@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美味時光餐廳</title>
+  <style>
+    :root {
+      --primary-color: #8B0000;
+      --accent-color: #FFD700;
+      --bg-color: #fffaf0;
+      --text-color: #333;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://source.unsplash.com/1600x900/?restaurant,interior') no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 4rem;
+      margin: 0;
+      text-shadow: 2px 2px 5px #000;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .menu-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+    .menu-item h3 {
+      margin-top: 0;
+      color: var(--accent-color);
+    }
+    .menu-item p {
+      margin: 0;
+    }
+    #contact p {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    footer {
+      background: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>美味時光餐廳</h1>
+    <p>品味每一刻，享受每一餐</p>
+  </header>
+
+  <section id="about">
+    <h2>關於我們</h2>
+    <p style="text-align: center; max-width: 800px; margin: auto;">
+      美味時光餐廳致力於提供最溫馨的用餐體驗，融合地中海與亞洲風味，選用新鮮食材與創意料理，讓每一位顧客都能感受到家的溫暖。
+    </p>
+  </section>
+
+  <section id="menu">
+    <h2>精選菜單</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <h3>香煎牛排</h3>
+        <p>佐紅酒醬汁，外酥內嫩。</p>
+      </div>
+      <div class="menu-item">
+        <h3>義式蕃茄海鮮燉飯</h3>
+        <p>滿滿海味與濃郁蕃茄香。</p>
+      </div>
+      <div class="menu-item">
+        <h3>抹茶起司蛋糕</h3>
+        <p>甜而不膩的日式風味甜點。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡我們</h2>
+    <p>📍 地址：台北市信義區美食街88號</p>
+    <p>📞 電話：(02) 1234-5678</p>
+    <p>🕒 營業時間：週一至週日 11:00 - 22:00</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 美味時光餐廳 | 版權所有</p>
+  </footer>
+</body>
+</html>
